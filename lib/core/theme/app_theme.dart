@@ -45,7 +45,7 @@ abstract final class AppTheme {
       colorScheme: scheme,
       scaffoldBackgroundColor: scaffoldBackground,
       visualDensity: VisualDensity.standard,
-      appBarTheme: AppBarTheme(
+      appBarTheme: AppBarThemeData(
         elevation: 0,
         centerTitle: false,
         backgroundColor: Colors.transparent,
@@ -57,7 +57,7 @@ abstract final class AppTheme {
         space: 1,
         thickness: 1,
       ),
-      inputDecorationTheme: InputDecorationTheme(
+      inputDecorationTheme: InputDecorationThemeData(
         filled: true,
         fillColor: scheme.surfaceContainerHighest,
         contentPadding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),

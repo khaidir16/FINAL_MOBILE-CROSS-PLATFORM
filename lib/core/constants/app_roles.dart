@@ -26,11 +26,9 @@ extension AppRolePresentation on AppRole {
         AppRole.admin => 'Manajemen data sekolah dan portal administrasi.',
       };
 
-  bool get isMinimumFinalTarget => switch (this) {
-        AppRole.student ||
-        AppRole.subjectTeacher ||
-        AppRole.homeroomTeacher ||
-        AppRole.counselor => true,
-        AppRole.dutyTeacher || AppRole.admin => false,
-      };
+  bool get isMinimumFinalTarget =>
+      this == AppRole.student ||
+      this == AppRole.subjectTeacher ||
+      this == AppRole.homeroomTeacher ||
+      this == AppRole.counselor;
 }
